@@ -35,8 +35,7 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragmentContainerView, firstFrag)
             .commit()
     }
-
-
+    
 }
 
 
