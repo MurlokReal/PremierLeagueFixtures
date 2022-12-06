@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Premier League Fixtures</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="first_fragment">ТЕКСТ ВНУТРИ ФРАГМЕНТА 1</string>
+    <string name="second_fragment">ТЕКСТ ВНУТРИ ФРАГМЕНТА 2</string>
+    <string name="next_layout_button">NEXT LAYOUT</string>
+</resources>
