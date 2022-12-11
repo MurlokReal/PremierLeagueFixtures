@@ -1,5 +1,6 @@
 package com.example.premierleaguefixtures.skrypnik
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -18,23 +19,41 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         val nextViewButton = findViewById<Button>(R.id.nextViewButton)
+        val detailScreenFragment = DetailScreenFrag.newInstance(1,
+            1,
+            "2021-08-13 19:00:00Z",
+            "Brentford Community Stadium",
+            "Brentford",
+            "Arsenal",
+            null,
+            2,
+            0)
+//        supportFragmentManager.beginTransaction()
+//            .add(R.id.fragmentContainerView, detailScreenFragment)
+//            .commit()
+
+
+        nextViewButton.setOnClickListener() {
+
+            val myCurrentFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)
+
+            if (myCurrentFragment.toString().startsWith("DetailScreen")) {
+                supportFragmentManager.beginTransaction()
+                    .remove(detailScreenFragment)
+                    .commit()
+                nextViewButton.setText(R.string.next_layout_button)
+            }
+
+            else {
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragmentContainerView, detailScreenFragment)
+                    .commit()
+                nextViewButton.text = "HIDE DETAILS"
+            }
+        }
 
     }
 
-    fun onClickNextViewButton(view : View) {
-        val firstFrag = FirstFragment.newInstance()
-        val secondFrag = SecondFragment.newInstance()
-
-        var myCurrentFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)
-        Log.d("MyTag", myCurrentFragment.toString())
-
-        if (myCurrentFragment.toString().startsWith("FirstFragment")) supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainerView, secondFrag)
-            .commit()
-        else supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainerView, firstFrag)
-            .commit()
-    }
     
 }
 
