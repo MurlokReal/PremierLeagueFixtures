@@ -8,7 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <LinearLayout
             android:id="@+id/MatchNumberLayout"
@@ -22,14 +23,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/match_number"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/match_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -37,7 +40,6 @@
             android:id="@+id/RoundNumberLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -46,14 +48,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/round_number"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/round_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -61,7 +65,6 @@
             android:id="@+id/DateUtcLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -70,14 +73,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/date_utc"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/date_utc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -85,7 +90,6 @@
             android:id="@+id/LocationLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -94,14 +98,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Location"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -109,7 +115,6 @@
             android:id="@+id/HomeTeamLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -118,14 +123,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/home_team"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/home_team"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -133,7 +140,6 @@
             android:id="@+id/AwayTeamLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -142,14 +148,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/away_team"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/away_team"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -157,7 +165,6 @@
             android:id="@+id/GroupLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -166,14 +173,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/group"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -181,7 +190,6 @@
             android:id="@+id/HomeTeamScoreLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -190,14 +198,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/home_team_score"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/home_team_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
@@ -205,7 +215,6 @@
             android:id="@+id/AwayTeamScoreLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -214,14 +223,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/away_team_score"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"/>
 
             <TextView
                 android:id="@+id/away_team_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 

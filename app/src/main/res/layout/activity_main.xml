@@ -10,18 +10,32 @@
         android:id="@+id/fragmentContainerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="25dp"
-        tools:layout="@layout/fragment_detail_screen" />
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout="@layout/fragment_match_list" />
 
     <Button
         android:id="@+id/nextViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="@string/next_layout_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/match_list_button"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/match_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/match_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nextViewButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

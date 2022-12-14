@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10sp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        
+        <TextView
+            android:id="@+id/tv_card_home_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/away_team"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/tv_card_away_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_team"
+            android:textSize="40sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

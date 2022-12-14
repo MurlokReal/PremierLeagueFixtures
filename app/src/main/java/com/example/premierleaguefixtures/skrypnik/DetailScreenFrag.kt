@@ -9,11 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 
-/**
- * A simple [Fragment] subclass.
- * Use the [DetailScreenFrag.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class DetailScreenFrag : Fragment(R.layout.fragment_detail_screen) {
 
 
@@ -41,6 +37,7 @@ class DetailScreenFrag : Fragment(R.layout.fragment_detail_screen) {
         view.findViewById<TextView>(R.id.group).text = arguments?.get("group").toString()
         view.findViewById<TextView>(R.id.home_team_score).text = arguments?.get("homeTeamScore").toString()
         view.findViewById<TextView>(R.id.away_team_score).text = arguments?.get("awayTeamScore").toString()
+
     }
 
     override fun onResume() {
@@ -49,12 +46,7 @@ class DetailScreenFrag : Fragment(R.layout.fragment_detail_screen) {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         */
-        @JvmStatic
+
         fun newInstance(
             matchNumber: Int,
             roundNumber: Int,
